@@ -1,0 +1,77 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Eight tries to guess a randomly chosen U.S. state.",
+          "examplePhrases": [
+            "Alexa open guess random state",
+            "Alexa start guess random state"
+          ],
+          "keywords": [
+            "geography",
+            "game",
+            "random",
+            "state",
+            "U.S.",
+            "guess"
+          ],
+          "name": "Guess Random State",
+          "description": "Eight attempts to guess a random U.S. state, and find out whether you are correct, very close, or wrong. Keeps track of number of games played and number of games won.",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "updatesDescription": "Number of guesses left is more obvious now.",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "{\"ask_dist_username\":\"\",\"ask_dist_password\":\"\",\"ask_dist_testing_instructions\":\"Sample Testing Instructions.\"}",
+      "category": "GAMES",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:partition:service:region:account-id:resource-type:resource-id:version"
+        },
+        "interfaces": [],
+        "locales": {},
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:partition:service:region:account-id:resource-type:resource-id:version"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:partition:service:region:account-id:resource-type:resource-id:version"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:partition:service:region:account-id:resource-type:resource-id:version"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {}
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "shoppingKit": {
+        "isShoppingActionsEnabled": false,
+        "isAmazonAssociatesOnAlexaEnabled": false
+      },
+      "usesPersonalInfo": false
+    }
+  }
+}

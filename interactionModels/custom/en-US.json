@@ -1,0 +1,144 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "guess random state",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "StateGuessIntent",
+          "slots": [
+            {
+              "name": "state",
+              "type": "AMAZON.Region"
+            }
+          ],
+          "samples": [
+            "{state} state",
+            "the state of {state}",
+            "{state}",
+            "is it {state}",
+            "how about {state}",
+            "could be {state}"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "StateGuessIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "state",
+              "type": "AMAZON.Region",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {},
+              "validations": [
+                {
+                  "type": "isInSet",
+                  "prompt": "Slot.Validation.235208321243.392091513733.1449861982262",
+                  "values": [
+                    "florida",
+                    "arkansas",
+                    "nebraska",
+                    "ohio",
+                    "texas",
+                    "missouri",
+                    "georgia",
+                    "alaska",
+                    "delaware",
+                    "massachusetts",
+                    "california",
+                    "oklahoma",
+                    "new hampshire",
+                    "north carolina",
+                    "alabama",
+                    "louisiana",
+                    "kansas",
+                    "pennsylvania",
+                    "south carolina",
+                    "utah",
+                    "minnesota",
+                    "oregon",
+                    "virginia",
+                    "washington",
+                    "iowa",
+                    "arizona",
+                    "maryland",
+                    "illinois",
+                    "rhode island",
+                    "tennessee",
+                    "new jersey",
+                    "west virginia",
+                    "montana",
+                    "idaho",
+                    "kentucky",
+                    "wisconsin",
+                    "maine",
+                    "nevada",
+                    "hawaii",
+                    "michigan",
+                    "connecticut",
+                    "colorado",
+                    "new york",
+                    "north dakota",
+                    "wyoming",
+                    "south dakota",
+                    "vermont",
+                    "mississippi",
+                    "new mexico",
+                    "indiana"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Slot.Validation.235208321243.392091513733.1449861982262",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "That\u0027s not a US state. Please guess a US state."
+          }
+        ]
+      }
+    ]
+  },
+  "version": "7"
+}
